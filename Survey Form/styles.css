@@ -1,0 +1,90 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #79D4F2;
+    color: #165A70;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+#survey-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-group{
+    max-width: 400px;
+    margin: 0 auto;
+}
+label{
+    display: block;
+}
+input, textarea, button{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-control{
+    border-radius: 0.25rem;
+    border: 1px solid #279CC2;
+    background-color: #279CC2;
+    color: #79D4F2;
+    width: 100%;
+}
+input::-webkit-input-placeholder { color: #79D4F2; }
+
+button{
+    background-color: #165A70;
+    border: 0;
+    color: #279CC2;
+    border-radius: 0.28rem;
+}
+button:hover{
+background-color: #279CC2;
+color: #79D4F2;
+border: 1px solid #79D4F2;
+border-radius: 0.15rem;
+}
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #79D4F2;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: #279CC2;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #279CC2;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #279CC2;
+  }
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  .form-control:focus-within {
+    color: #279CC2;
+  }

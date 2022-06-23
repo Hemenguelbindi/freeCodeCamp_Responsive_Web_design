@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Форма обратоной связи</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Обратная связь</h1>
+            <p id="description" class="descriptiom text-center">Спасибо что помогаете нам быть лучше</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Имя</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Введите имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Почта</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Введите почту" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Возраст<span class="clue">(по желанию)</span> </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Возраст">
+            </div>
+            <div class="form-group">
+                <p>Статус на данный момент</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Какой у вас статус</option>
+                    <option value="student">Студент</option>
+                    <option value="job">Работаю</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div class="form-group radio-toolbar">
+                <p>Порекомендуюте ли вы нас друзьям</p>
+                <labe><input name="user-recommend" value="yes" type="radio" class="input-radio" checked> Да</labe>
+                <labe><input name="user-recommend" value="maby" type="radio" class="input-radio"> Возможно</labe>
+                <labe><input name="user-recommend" value="not-sure" type="radio" class="input-radio"> Нет конешно</labe>
+            </div>
+            <div class="form-group">
+                <p>Что хотите улучшить</p>
+                <label>
+                    <input name="prefe" type="checkbox" value="english" class="input-checkbox">
+                    Английский 
+                </label>
+                <label>
+                    <input name="prefe" type="checkbox" value="knowing-in-oop" 
+                    class="input-checkbox">
+                    Знание по ООП 
+                </label>
+                <label>
+                    <input name="prefe" type="checkbox"
+                     value="django" class="input-checkbox">
+                    Django 
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Поделитесь своими мыслями</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Кодить это хорошо..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submint" id="submit" class="submit-button"> Отправить </button>
+            </div>
+        </form> 
+    </div>
+
+</body>
+</html>
